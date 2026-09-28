@@ -180,32 +180,33 @@ const CONFIG = {
    q: câu hỏi | options: 4 đáp án (A, B, C, D) | answer: vị trí đáp án đúng
    (0 = A, 1 = B, 2 = C, 3 = D)                                            */
 const QUESTIONS = [
-  { q: "Thủ đô của Việt Nam là thành phố nào?", options: ["Hà Nội","Huế","Đà Nẵng","Hải Phòng"], answer: 0 },
-  { q: "Đỉnh núi nào cao nhất Việt Nam?", options: ["Pu Ta Leng","Fansipan","Bạch Mã","Ngọc Linh"], answer: 1 },
-  { q: "Hành tinh nào gần Mặt Trời nhất?", options: ["Sao Kim","Sao Hỏa","Sao Thủy","Trái Đất"], answer: 2 },
-  { q: "15 × 4 bằng bao nhiêu?", options: ["45","65","80","60"], answer: 3 },
-  { q: "Ai là tác giả của Truyện Kiều?", options: ["Nguyễn Du","Nguyễn Trãi","Hồ Xuân Hương","Nguyễn Đình Chiểu"], answer: 0 },
-  { q: "Quốc gia nào có diện tích lớn nhất thế giới?", options: ["Canada","Nga","Trung Quốc","Hoa Kỳ"], answer: 1 },
-  { q: "Công thức hóa học của nước là gì?", options: ["CO₂","O₂","H₂O","NaCl"], answer: 2 },
-  { q: "Vịnh Hạ Long thuộc tỉnh nào?", options: ["Hải Phòng","Thanh Hóa","Nghệ An","Quảng Ninh"], answer: 3 },
-  { q: "Ngày Quốc khánh của Việt Nam là ngày nào?", options: ["2/9","30/4","19/8","1/5"], answer: 0 },
-  { q: "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?", options: ["1945","1954","1968","1975"], answer: 1 },
-  { q: "Loài động vật nào lớn nhất trong các loài sống trên cạn?", options: ["Tê giác","Hà mã","Voi châu Phi","Hươu cao cổ"], answer: 2 },
-  { q: "Đại dương nào lớn nhất thế giới?", options: ["Đại Tây Dương","Ấn Độ Dương","Bắc Băng Dương","Thái Bình Dương"], answer: 3 },
-  { q: "Ai là người đề xuất thuyết tương đối?", options: ["Albert Einstein","Isaac Newton","Galileo Galilei","Nikola Tesla"], answer: 0 },
-  { q: "Số nguyên tố nhỏ nhất là số nào?", options: ["0","1","2","3"], answer: 2 },
-  { q: "Tháp Eiffel nằm ở thành phố nào?", options: ["Luân Đôn","Paris","Rome","Berlin"], answer: 1 },
-  { q: "Cơ quan nào bơm máu đi khắp cơ thể?", options: ["Phổi","Gan","Thận","Tim"], answer: 3 },
-  { q: "Việt Nam gia nhập ASEAN vào năm nào?", options: ["1995","1986","2007","2000"], answer: 0 },
-  { q: "Cây xanh hấp thụ khí nào để quang hợp?", options: ["Ô-xi","Ni-tơ","Các-bô-níc (CO₂)","Hi-đrô"], answer: 2 },
-  { q: "Mỗi đội bóng đá có bao nhiêu cầu thủ trên sân (tính cả thủ môn)?", options: ["9","10","12","11"], answer: 3 },
-  { q: "Đàn bầu truyền thống của Việt Nam có mấy dây?", options: ["1 dây","2 dây","3 dây","4 dây"], answer: 0 },
-  { q: "Kim loại nào ở thể lỏng ở nhiệt độ phòng?", options: ["Nhôm","Thủy ngân","Đồng","Sắt"], answer: 1 },
-  { q: "Châu lục nào có diện tích lớn nhất?", options: ["Châu Phi","Châu Mỹ","Châu Á","Châu Âu"], answer: 2 },
-  { q: "Ai là người đầu tiên đặt chân lên Mặt Trăng?", options: ["Yuri Gagarin","Buzz Aldrin","Michael Collins","Neil Armstrong"], answer: 3 },
-  { q: "Nước nguyên chất sôi ở bao nhiêu độ C (áp suất thường)?", options: ["90°C","100°C","110°C","120°C"], answer: 1 },
-  { q: "Tên cũ của Thành phố Hồ Chí Minh là gì?", options: ["Sài Gòn","Thăng Long","Phú Xuân","Đông Đô"], answer: 0 }
+  { q: "Theo Hồ Chí Minh, con người trước hết được nhìn nhận là một chỉnh thể thống nhất giữa những yếu tố nào?", options: ["Trí lực, tâm lực và thể lực", "Đạo đức, chính trị và văn hóa", "Cá nhân, cộng đồng và dân tộc", "Vật chất, tinh thần và xã hội"], answer: 0 },
+  { q: "Trong cách giải thích của Hồ Chí Minh về “chữ người”, phạm vi “nghĩa rộng” được hiểu là:", options: ["Gia đình và những người thân thuộc", "Đồng bào trong phạm vi cả nước", "Các dân tộc cùng chung lợi ích", "Toàn thể những người lao động"], answer: 1 },
+  { q: "Quan điểm nào phản ánh đúng nhất cách Hồ Chí Minh tiếp cận con người?", options: ["Con người chủ yếu được quyết định bởi phẩm chất cá nhân", "Con người phải được xem xét trong điều kiện lịch sử cụ thể", "Con người có bản chất ổn định bất chấp hoàn cảnh xã hội", "Con người chỉ có thể được hiểu thông qua quan hệ giai cấp"], answer: 1 },
+  { q: "Theo giáo trình, trong thực tiễn con người được xem xét trong ba chiều quan hệ cơ bản nào?", options: ["Cá nhân – gia đình – dân tộc", "Chính trị – kinh tế – văn hóa", "Cộng đồng – chế độ xã hội – tự nhiên", "Giai cấp – dân tộc – nhân loại"], answer: 2 },
+  { q: "Việc Hồ Chí Minh quan tâm đến “cơm ăn, áo mặc, chỗ ở, học hành” chủ yếu thể hiện:", options: ["Con người trước hết phải có đời sống vật chất đầy đủ", "Nhu cầu cụ thể của con người phải được quan tâm trong thực tiễn", "Phát triển kinh tế là điều kiện duy nhất để phát triển con người", "Nhu cầu vật chất có ý nghĩa cao hơn nhu cầu tinh thần"], answer: 1 },
+  { q: "Nội dung nào KHÔNG phù hợp với quan niệm của Hồ Chí Minh về con người?", options: ["Trong mỗi con người tồn tại cả mặt tốt và mặt xấu", "Con người là thành viên của một cộng đồng xã hội", "Con người cần được đặt trong hoàn cảnh lịch sử cụ thể", "Bản chất mỗi con người được xác lập cố định từ khi sinh ra"], answer: 3 },
+  { q: "Điểm đặc sắc trong quan niệm của Hồ Chí Minh về con người Việt Nam là:", options: ["Nhấn mạnh con người chủ yếu ở phương diện đạo đức cá nhân", "Xuất phát từ những điều kiện lịch sử và kinh tế – xã hội cụ thể", "Xem lợi ích cá nhân là tiền đề của mọi quan hệ cộng đồng", "Tách con người Việt Nam khỏi đặc điểm chung của nhân loại"], answer: 1 },
+  { q: "Trong tư tưởng Hồ Chí Minh, con người giữ vị trí nào đối với sự nghiệp cách mạng?", options: ["Vừa là đối tượng quản lý, vừa là nguồn lực xã hội", "Vừa là mục tiêu, vừa là động lực của cách mạng", "Vừa là chủ thể chính trị, vừa là đối tượng giáo dục", "Vừa là lực lượng sản xuất, vừa là chủ thể văn hóa"], answer: 1 },
+  { q: "Nội dung nào thuộc phạm vi của “giải phóng dân tộc”?", options: ["Xóa bỏ chế độ người bóc lột người", "Xóa bỏ sự bất bình đẳng giữa các giai cấp", "Xóa bỏ ách thống trị và giành độc lập dân tộc", "Xóa bỏ các điều kiện làm tha hóa con người"], answer: 2 },
+  { q: "Điểm phân biệt cơ bản giữa giải phóng xã hội và giải phóng giai cấp là:", options: ["Giải phóng xã hội hướng đến cải biến toàn bộ trạng thái xã hội", "Giải phóng xã hội chỉ tập trung vào đời sống vật chất", "Giải phóng giai cấp không liên quan đến vấn đề bất bình đẳng", "Giải phóng giai cấp được thực hiện sau giải phóng con người"], answer: 0 },
+  { q: "Theo giáo trình, mục tiêu trực tiếp nhất của giải phóng con người là:", options: ["Xóa bỏ sự khác biệt giữa các cộng đồng xã hội", "Xóa bỏ áp bức, bóc lột, nô dịch và sự tha hóa", "Xóa bỏ mọi hình thức sở hữu mang tính cá nhân", "Xóa bỏ sự phân công lao động trong xã hội"], answer: 1 },
+  { q: "Quan hệ giữa các nội dung “giải phóng” trong tư tưởng Hồ Chí Minh được hiểu đúng nhất là:", options: ["Tồn tại độc lập và được thực hiện theo những con đường riêng", "Có liên hệ nhưng giải phóng giai cấp quyết định toàn bộ quá trình", "Kết hợp chặt chẽ và nối tiếp nhau trong quá trình cách mạng", "Giải phóng con người phải hoàn thành trước giải phóng xã hội"], answer: 2 },
+  { q: "Nội dung “con người là mục tiêu của cách mạng” nhấn mạnh điều gì?", options: ["Mọi hoạt động cách mạng cuối cùng phải hướng đến giải phóng và phát triển con người", "Con người chỉ được phát huy sau khi các nhiệm vụ cách mạng đã hoàn thành", "Con người cần phục vụ trước hết cho sự phát triển của lực lượng sản xuất", "Sự phát triển con người phụ thuộc hoàn toàn vào trình độ kinh tế của xã hội"], answer: 0 },
+  { q: "Luận điểm nào thể hiện rõ nhất quan niệm con người là động lực của cách mạng?", options: ["Mọi cá nhân đều có vị trí ngang nhau trong quá trình lịch sử", "Sự thay đổi xã hội trước hết bắt nguồn từ điều kiện tự nhiên", "Nhân dân là lực lượng sáng tạo lịch sử thông qua hoạt động thực tiễn", "Trí thức là lực lượng quyết định nhất đối với mọi cuộc cách mạng"], answer: 2 },
+  { q: "Khi nhấn mạnh lực lượng, trí tuệ, quyền hành, lòng tốt và niềm tin của nhân dân, nội dung trọng tâm là:", options: ["Năng lực tự quản lý của từng cá nhân", "Sức mạnh tổng hợp của quần chúng nhân dân", "Vai trò ưu tiên của lực lượng trí thức", "Sự thống nhất tuyệt đối về lợi ích xã hội"], answer: 1 },
+  { q: "Theo Hồ Chí Minh, xây dựng con người có đặc điểm nào sau đây?", options: ["Là nhiệm vụ trước mắt, chủ yếu thuộc lĩnh vực giáo dục", "Là yêu cầu khách quan, vừa cấp bách vừa lâu dài", "Là nhiệm vụ lâu dài, chỉ đặt ra khi kinh tế phát triển", "Là vấn đề chiến lược, tách khỏi nhiệm vụ kinh tế – xã hội"], answer: 1 },
+  { q: "Tư tưởng “Vì lợi ích trăm năm thì phải trồng người” nhấn mạnh rõ nhất đặc điểm nào?", options: ["Xây dựng con người là công việc lâu dài và thường xuyên", "Giáo dục con người phải ưu tiên hơn phát triển kinh tế", "Xây dựng con người chủ yếu là nhiệm vụ của nhà trường", "Giáo dục cần hoàn tất trước khi cải tạo xã hội"], answer: 0 },
+  { q: "Theo giáo trình, “trồng người” phải được tiến hành như thế nào?", options: ["Sau khi đã hoàn thành nhiệm vụ phát triển kinh tế", "Song song với quá trình xây dựng và phát triển xã hội", "Tập trung chủ yếu trong giai đoạn đầu của cách mạng", "Ưu tiên giáo dục đạo đức trước rồi mới giáo dục chuyên môn"], answer: 1 },
+  { q: "Cách hiểu nào đúng với luận điểm “Muốn xây dựng chủ nghĩa xã hội, trước hết cần phải có những con người xã hội chủ nghĩa”?", options: ["Phải xây dựng hoàn chỉnh con người mới rồi mới cải tạo xã hội", "Con người xã hội chủ nghĩa và xã hội mới tác động qua lại với nhau", "Xây dựng con người chỉ có thể bắt đầu khi xã hội đã phát triển cao", "Những con người tiên tiến sẽ tự hình thành khi kinh tế thay đổi"], answer: 1 },
+  { q: "Trong quan niệm xây dựng con người toàn diện của Hồ Chí Minh, “hồng” và “chuyên” gần nhất với cặp phạm trù nào?", options: ["Lý tưởng và lợi ích", "Phẩm chất và năng lực", "Chính trị và kinh tế", "Cá nhân và tập thể"], answer: 1 },
+  { q: "Nội dung nào KHÔNG nằm trong những yêu cầu chủ yếu về xây dựng con người toàn diện được nêu trong giáo trình?", options: ["Ý thức làm chủ và tinh thần tập thể", "Lòng yêu nước và tinh thần quốc tế", "Phương pháp làm việc khoa học", "Khả năng cạnh tranh và tích lũy cá nhân"], answer: 3 },
+  { q: "Nội dung nào được Hồ Chí Minh đặc biệt quan tâm khi nói đến nâng cao năng lực con người?", options: ["Trí tuệ, lý luận, văn hóa, chuyên môn, ngoại ngữ và sức khỏe", "Chính trị, kinh tế, pháp luật, ngoại giao và quản lý", "Đạo đức, ý chí, niềm tin, nghệ thuật và thể chất", "Tư tưởng, tác phong, giao tiếp, kỹ thuật và quản trị"], answer: 0 },
+  { q: "Theo giáo trình, phương pháp xây dựng con người phải kết hợp tự rèn luyện của cá nhân với:", options: ["Kỷ luật tập thể và sự kiểm soát của xã hội", "Cơ chế khoa học của bộ máy và nền dân chủ", "Phát triển kinh tế và nâng cao đời sống vật chất", "Giáo dục lý luận và thực hiện nghĩa vụ xã hội"], answer: 1 },
+  { q: "Quan điểm “lấy gương người tốt, việc tốt hằng ngày để giáo dục lẫn nhau” thể hiện phương pháp nào?", options: ["Phê bình và tự phê bình", "Giáo dục bằng nêu gương", "Giáo dục thông qua lao động", "Rèn luyện bằng thực tiễn"], answer: 1 },
+  { q: "Quan niệm “hiền, dữ của con người không phải là tính sẵn. Phần nhiều do giáo dục mà nên” được sử dụng trong giáo trình để nhấn mạnh:", options: ["Giáo dục có vai trò quan trọng trong quá trình hình thành con người", "Hoàn cảnh xã hội quyết định hoàn toàn phẩm chất của mỗi người", "Phẩm chất cá nhân có thể thay đổi mà không cần tự rèn luyện", "Giáo dục có thể thay thế vai trò của môi trường và hoạt động thực tiễn"], answer: 0 }
 ];
+ 
 
 /* =====================================================================
    PHẦN CHẠY GAME — không cần sửa
